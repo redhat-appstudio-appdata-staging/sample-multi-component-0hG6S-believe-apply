@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: go-component-sample-multi-component
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/mmorhun-tenant/sample-multi-component/go-component-sample-multi-component@sha256:5aed04d80ef65763ee7b0300ade51d0788dd02ca2844f3086cc890f34b0a03b8
+        name: my-go
+        resources: {}
+status: {}
